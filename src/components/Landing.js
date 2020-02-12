@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import RABallantyneResume from '../resume/RABallantyneResume.pdf';
+import RABallantyneResume from '../files/RABallantyneResume.pdf';
 
 const Landing = () => {
   return (
