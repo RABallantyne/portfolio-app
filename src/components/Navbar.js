@@ -11,21 +11,21 @@ const Navbar = () => {
           rel='noopener noreferrer'
           target='_blank'
         >
-          <i class='fas fa-envelope-square'></i>
+          <i className='fas fa-envelope-square'></i>
         </a>
         <a
           href='https://github.com/RABallantyne/'
           rel='noopener noreferrer'
           target='_blank'
         >
-          <i class='fab fa-github-square'></i>
+          <i className='fab fa-github-square'></i>
         </a>
         <a
           href='https://www.linkedin.com/in/rob-ballantyne-73b66b45/'
           rel='noopener noreferrer'
           target='_blank'
         >
-          <i class='fab fa-linkedin'></i>
+          <i className='fab fa-linkedin'></i>
         </a>
       </h1>
       <ul>
