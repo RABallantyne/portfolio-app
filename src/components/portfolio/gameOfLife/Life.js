@@ -2,8 +2,8 @@ import React, { useState, useCallback, useRef } from 'react';
 import produce from 'immer';
 import coolDesign from './data.js';
 
-const numRows = 30;
-const numCols = 30;
+const numRows = 24;
+const numCols = 24;
 
 const operations = [
   [0, 1],

@@ -43,12 +43,13 @@ img {
     display: flex;
   }
   a {
+    transition: 0.3s;
     color: #fff;
     padding: 0.45rem;
     margin: 0 0.25rem;
 
     &:hover {
-      color: $primary-color;
+      color: $danger-color;
     }
   }
 }
@@ -78,17 +79,12 @@ img {
 .contact-form {
   display: flex;
   flex-direction: column;
-  // align-items: center;
-  // margin: 1em;
-  // padding: 1em;
-  // width: 80%;
+
   input {
-    // width: 50%;
     padding: 0.5em;
     margin: 1em 0;
   }
   textarea {
-    // width: 50%;
     padding: 0.5em;
     margin: 1em 0;
     height: 10em;
@@ -102,5 +98,27 @@ img {
   a {
     padding: 0 0.7em 0.5em 0;
     margin-left: 0;
+  }
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+
+  .project-card {
+    width: auto;
+    padding: 0.5em;
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $primary-color;
+    p {
+      margin-bottom: 0.5em;
+    }
+    .btn {
+      margin-bottom: 0.5em;
+    }
   }
 }
