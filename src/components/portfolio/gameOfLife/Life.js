@@ -23,7 +23,7 @@ const design = () => {
 const randomGrid = () => {
   const rows = [];
   for (let i = 0; i < numRows; i++) {
-    rows.push(Array.from(Array(numCols), () => (Math.random() > 0.7 ? 1 : 0)));
+    rows.push(Array.from(Array(numCols), () => (Math.random() > 0.8 ? 1 : 0)));
   }
   console.log(rows);
   return rows;
@@ -78,46 +78,48 @@ export default function Life() {
   }, []);
 
   return (
-    <>
-      <button
-        onClick={() => {
-          setRunning(!running);
-          if (!running) {
-            runningRef.current = true;
-            runLife();
-          }
-          console.log(grid);
-        }}
-      >
-        {running ? 'stop' : 'start'}
-      </button>
-      <button
-        onClick={() => {
-          setGrid(emptyGrid());
-        }}
-      >
-        clear
-      </button>
-      <button
-        onClick={() => {
-          setGrid(randomGrid());
-        }}
-      >
-        randomize
-      </button>
-      <button
-        onClick={() => {
-          setGrid(design());
-        }}
-      >
-        design
-      </button>
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: `repeat(${numCols}, 20px)`
-        }}
-      >
+    <div className='life-container'>
+      <h1 className='large'>Conway's Game of Life</h1>
+      <p className='lead'>This project was built with react using hooks.</p>
+      <div className='buttons'>
+        <div
+          className='btn'
+          onClick={() => {
+            setRunning(!running);
+            if (!running) {
+              runningRef.current = true;
+              runLife();
+            }
+          }}
+        >
+          {running ? 'stop' : 'start'}
+        </div>
+        <div
+          className='btn'
+          onClick={() => {
+            setGrid(emptyGrid());
+          }}
+        >
+          clear
+        </div>
+        <div
+          className='btn'
+          onClick={() => {
+            setGrid(randomGrid());
+          }}
+        >
+          randomize
+        </div>
+        <div
+          className='btn'
+          onClick={() => {
+            setGrid(design());
+          }}
+        >
+          design
+        </div>
+      </div>
+      <div className='life-game'>
         {grid.map((rows, i) =>
           rows.map((col, k) => (
             <div
@@ -128,16 +130,11 @@ export default function Life() {
                 });
                 setGrid(newGrid);
               }}
-              style={{
-                width: 20,
-                height: 20,
-                backgroundColor: grid[i][k] ? 'red' : undefined,
-                border: 'solid 1px black'
-              }}
+              className={grid[i][k] ? 'box on' : 'box off'}
             />
           ))
         )}
       </div>
-    </>
+    </div>
   );
 }
