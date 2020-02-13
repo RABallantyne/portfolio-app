@@ -6,6 +6,27 @@ const Navbar = () => {
     <nav className='navbar bg-dark'>
       <h1>
         <Link to='/'>Rob Ballantyne</Link>
+        <a
+          href='mailto:RABallantyne@gmail.com'
+          rel='noopener noreferrer'
+          target='_blank'
+        >
+          <i class='fas fa-envelope-square'></i>
+        </a>
+        <a
+          href='https://github.com/RABallantyne/'
+          rel='noopener noreferrer'
+          target='_blank'
+        >
+          <i class='fab fa-github-square'></i>
+        </a>
+        <a
+          href='https://www.linkedin.com/in/rob-ballantyne-73b66b45/'
+          rel='noopener noreferrer'
+          target='_blank'
+        >
+          <i class='fab fa-linkedin'></i>
+        </a>
       </h1>
       <ul>
         <li>
