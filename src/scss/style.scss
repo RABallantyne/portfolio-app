@@ -124,10 +124,10 @@ img {
 }
 
 .life-container {
-  padding: 1em;
+  padding: 1em 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   p {
     padding-bottom: 1em;
   }
@@ -135,9 +135,11 @@ img {
     padding-bottom: 1em;
   }
   .buttons {
+    align-self: center;
     padding-bottom: 1em;
   }
   .life-game {
+    align-self: center;
     display: grid;
     grid-template-columns: repeat(24, 20px);
     border: 1px solid black;
