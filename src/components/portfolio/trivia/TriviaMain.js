@@ -1,14 +1,13 @@
-import React, { Component } from "react";
-import TriviaAnswers from "./TriviaAnswers";
-import "./Trivia.css";
+import React, { Component } from 'react';
+import TriviaAnswers from './TriviaAnswers';
 
 export default class TriviaMain extends Component {
   state = {
-    question: "",
-    correctAnswer: "",
+    question: '',
+    correctAnswer: '',
     incorrectAnswers: [],
     answers: [],
-    difficulty: "",
+    difficulty: '',
     answered: false,
     showAnswer: false,
     points: 0
@@ -29,7 +28,7 @@ export default class TriviaMain extends Component {
   };
 
   getQuestion = () => {
-    fetch("https://opentdb.com/api.php?amount=1&category=18&type=multiple")
+    fetch('https://opentdb.com/api.php?amount=1&category=18&type=multiple')
       .then(response => response.json())
       .then(result =>
         this.setState({
@@ -63,28 +62,48 @@ export default class TriviaMain extends Component {
     }
     setTimeout(() => {
       this.getQuestion();
-    }, 1000);
+    }, 2000);
   };
 
   render() {
     return (
-      <div className="trivia-container">
-        {this.state.showAnswer ? (
-          <h3>
-            wrong! the correct answer is {this.state.correctAnswer}, you lose 2
-            points.
-          </h3>
-        ) : null}
-        {!this.state.showAnswer && this.state.answered ? (
-          <h3>Correct! You get 5 points!</h3>
-        ) : null}
-        <h2>{this.state.question.replace(/&quot;|&#039;/gi, "'")}</h2>
-        <TriviaAnswers
-          answers={this.state.answers}
-          checkAnswer={this.checkAnswer}
-        />
-        <h3>score: {this.state.points}</h3>
-        <button onClick={() => this.getQuestion()}>Another?</button>
+      <div>
+        <h1 className='large'>Trivia</h1>
+        <p>
+          This game calls out to a trivia api and randomly recieves trivia
+          questions.
+        </p>
+        <a
+          href='https://github.com/RABallantyne/portfolio-app/blob/master/src/components/portfolio/gameOfLife/Life.js'
+          rel='noopener noreferrer'
+          target='_blank'
+        >
+          Github
+        </a>
+        <div className='trivia-container'>
+          {this.state.showAnswer ? (
+            <div className='alert alert-danger'>
+              wrong! the correct answer is {this.state.correctAnswer}, you lose
+              2 points.
+            </div>
+          ) : null}
+          {!this.state.showAnswer && this.state.answered ? (
+            <div className='alert alert-success'>
+              Correct! You get 5 points!
+            </div>
+          ) : null}
+          <h2>{this.state.question.replace(/&quot;|&#039;/gi, "'")}</h2>
+          <div className='answer-score-container'>
+            <TriviaAnswers
+              answers={this.state.answers}
+              checkAnswer={this.checkAnswer}
+            />
+            <div className='score'>score: {this.state.points}</div>
+          </div>
+          <div className='btn' onClick={() => this.getQuestion()}>
+            Another?
+          </div>
+        </div>
       </div>
     );
   }

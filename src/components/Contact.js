@@ -13,9 +13,8 @@ export default function Contact() {
       )
       .then(
         result => {
-          console.log(result.text);
           if (result.text === 'OK') {
-            alert('Thank you for your e-mail');
+            alert('Thank you for your message');
           }
         },
         error => {
@@ -54,7 +53,6 @@ export default function Contact() {
       <p className='lead'>Write me a message:</p>
 
       <form className='contact-form' onSubmit={sendEmail}>
-        <input type='hidden' name='contact_number' />
         <label>Name</label>
         <input type='text' name='user_name' />
         <label>Email</label>

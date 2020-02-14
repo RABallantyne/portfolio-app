@@ -80,7 +80,19 @@ export default function Life() {
   return (
     <div className='life-container'>
       <h1 className='large'>Conway's Game of Life</h1>
-      <p className='lead'>This project was built with react using hooks.</p>
+      <p>
+        The rules to this game are simple: if a cell has 2 or 3 neighbors it
+        survives, any more or less and it dies. If a dead cell has exactly 3
+        neighbors it comes to life. The user can click on any cell to render it
+        dead or alive. This project was built with react using hooks.
+      </p>
+      <a
+        href='https://github.com/RABallantyne/portfolio-app/blob/master/src/components/portfolio/gameOfLife/Life.js'
+        rel='noopener noreferrer'
+        target='_blank'
+      >
+        Github
+      </a>
       <div className='buttons'>
         <div
           className='btn'

@@ -66,12 +66,17 @@ export default function Portfolio() {
             </div>
           </>
         ) : (
-          <div className='btn btn-special' onClick={() => backAction()}>
-            Return to Projects Selection
-          </div>
+          <>
+            <div className='btn btn-special' onClick={() => backAction()}>
+              Return to Projects Selection
+            </div>
+            {renderSwitch(selection)}
+            <div className='btn btn-special' onClick={() => backAction()}>
+              Return to Projects Selection
+            </div>
+          </>
         )}
       </div>
-      {renderSwitch(selection)}
     </>
   );
 }

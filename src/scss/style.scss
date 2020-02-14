@@ -128,6 +128,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  p {
+    padding-bottom: 1em;
+  }
+  a {
+    padding-bottom: 1em;
+  }
   .buttons {
     padding-bottom: 1em;
   }
@@ -147,6 +153,40 @@ img {
       &.off {
         background: undefined;
       }
+    }
+  }
+}
+
+.trivia-container {
+  padding: 1em 0;
+
+  .answer-score-container {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: space-around;
+    align-items: center;
+    .answers-container {
+      display: flex;
+      flex-direction: column;
+      align-self: left;
+      width: 100%;
+      .answers {
+        margin: 0.5 em 0;
+        padding: 0.5em;
+        transition: 0.5s;
+        &:hover {
+          background-color: $danger-color;
+          cursor: pointer;
+        }
+      }
+    }
+    .score {
+      text-align: center;
+      width: 38%;
+      font-size: 4em;
+      font-weight: bolder;
+      padding-left: 1em;
     }
   }
 }

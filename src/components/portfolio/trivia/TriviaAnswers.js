@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 export default function TriviaQuestions(props) {
   const displayAnswers = props.answers.map(answer => (
-    <h3 onClick={() => props.checkAnswer(answer)}>
-      {answer.replace(/&quot;|&#039;/gi, "'")}{" "}
-    </h3>
+    <div className='answers' onClick={() => props.checkAnswer(answer)}>
+      {answer.replace(/&quot;|&#039;/gi, "'")}{' '}
+    </div>
   ));
-  return <div>{displayAnswers}</div>;
+  return <div className='answers-container'>{displayAnswers}</div>;
 }
