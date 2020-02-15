@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import Life from './gameOfLife/Life';
 import TriviaMain from './trivia/TriviaMain';
 import Barback from './BarBack';
+import HangmanMain from './hangman/HangmanMain';
 
-export default function Portfolio() {
+export default function Portfolio(props) {
   const [selection, setSelection] = useState();
   const [showMenu, setShowMenu] = useState(true);
+  const { isClicked } = props.location;
+  console.log(isClicked);
 
   const backAction = () => {
     setSelection();
@@ -26,6 +29,8 @@ export default function Portfolio() {
         return <TriviaMain />;
       case 'Barback':
         return <Barback />;
+      case 'Hangman':
+        return <HangmanMain />;
       default:
         return <div></div>;
     }
@@ -61,6 +66,17 @@ export default function Portfolio() {
               <h2>Trivia</h2>
               <p>A simple trivia game, focusing on tech questions.</p>
               <div className='btn' title='Trivia' onClick={e => clickHandle(e)}>
+                View Project
+              </div>
+            </div>
+            <div className='project-card'>
+              <h2>Hangman</h2>
+              <p>Classic Hangman! </p>
+              <div
+                className='btn'
+                title='Hangman'
+                onClick={e => clickHandle(e)}
+              >
                 View Project
               </div>
             </div>
