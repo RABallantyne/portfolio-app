@@ -58,7 +58,7 @@ img {
 
 .landing {
   position: relative;
-  background: url('../img/sunset2.png') no-repeat center center/cover fixed;
+  background: url('../img/sunset2.png') no-repeat center center/cover;
   height: 100vh;
 
   &-inner {
@@ -199,31 +199,102 @@ img {
   }
 }
 
+//portfolio repeats:
+
 .info-section {
   align-self: flex-start;
   width: 100%;
   margin: auto;
   padding: 5px;
+
+  .info-header {
+    margin: 4px;
+  }
+
+  .info-header p {
+    font-style: italic;
+  }
+
+  .info-header span {
+    margin: 4px;
+    visibility: visible;
+  }
+
+  .info-title {
+    font-size: larger;
+    font-style: italic;
+  }
+  .info-points {
+    margin: 5px;
+    padding: 0px 5px 0px 5px;
+  }
 }
 
-.info-header {
-  margin: 4px;
-}
+//Hangman style
+.hang-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  h3 {
+    padding-bottom: 0.5em;
+  }
+  .letters {
+    color: rgb(23, 27, 41);
+    background-color: rgb(116, 138, 150);
+    text-align: center;
+    padding: 2px;
+    width: 30px;
+    margin: 2px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .lettersDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+  }
 
-.info-header p {
-  font-style: italic;
-}
+  div[disabled] {
+    text-decoration: line-through;
+    opacity: 0.4;
+    pointer-events: none;
+  }
 
-.info-header span {
-  margin: 4px;
-  visibility: visible;
-}
+  .displayWordContainer {
+    display: inline-block;
+    padding: 20px;
+  }
+  li {
+    display: inline-block;
+    text-transform: uppercase;
+    width: 26px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+  }
 
-.info-title {
-  font-size: larger;
-  font-style: italic;
-}
-.info-points {
-  margin: 5px;
-  padding: 0px 5px 0px 5px;
+  .displayWord {
+    border-bottom: 1px solid #666;
+    margin-right: 4px;
+    font-weight: bold;
+    font-size: 26px;
+  }
+  span {
+    visibility: hidden;
+  }
+
+  span.visible {
+    visibility: visible;
+  }
+
+  .display {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+  }
 }

@@ -3,6 +3,9 @@ import Life from './gameOfLife/Life';
 import TriviaMain from './trivia/TriviaMain';
 import Barback from './BarBack';
 import HangmanMain from './hangman/HangmanMain';
+import RecordSmart from './RecordSmart';
+import ScoreKeeper from './ScoreKeeper';
+import TreeFind from './TreeFind';
 
 export default function Portfolio(props) {
   const [selection, setSelection] = useState();
@@ -31,6 +34,12 @@ export default function Portfolio(props) {
         return <Barback />;
       case 'Hangman':
         return <HangmanMain />;
+      case 'RecordSmart':
+        return <RecordSmart />;
+      case 'ScoreKeeper':
+        return <ScoreKeeper />;
+      case 'TreeFind':
+        return <TreeFind />;
       default:
         return <div></div>;
     }
@@ -75,6 +84,45 @@ export default function Portfolio(props) {
               <div
                 className='btn'
                 title='Hangman'
+                onClick={e => clickHandle(e)}
+              >
+                View Project
+              </div>
+            </div>
+            <div className='project-card'>
+              <h2>RecordSmart</h2>
+              <p>
+                A todo app built to help recording artists to stay organized and
+                on task.{' '}
+              </p>
+              <div
+                className='btn'
+                title='RecordSmart'
+                onClick={e => clickHandle(e)}
+              >
+                View Project
+              </div>
+            </div>
+            <div className='project-card'>
+              <h2>ScoreKeeper</h2>
+              <p>App designed to help players keep score during any game. </p>
+              <div
+                className='btn'
+                title='ScoreKeeper'
+                onClick={e => clickHandle(e)}
+              >
+                View Project
+              </div>
+            </div>
+            <div className='project-card'>
+              <h2>TreeFind</h2>
+              <p>
+                CLI app that can be used as a field guide to help identify the
+                trees of Colorado.
+              </p>
+              <div
+                className='btn'
+                title='TreeFind'
                 onClick={e => clickHandle(e)}
               >
                 View Project

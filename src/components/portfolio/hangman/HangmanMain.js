@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import LettersSelection from "./LettersSelection";
-import CurrentGame from "./CurrentGame";
-import puzzleWords from "./data.js";
+import React, { Component } from 'react';
+import LettersSelection from './LettersSelection';
+import CurrentGame from './CurrentGame';
+import puzzleWords from './data.js';
 
 export default class HangmanMain extends Component {
   state = {
-    puzzleWord: "",
+    puzzleWord: '',
     guesses: [],
     wrongGuesses: [],
     winner: false
@@ -46,30 +46,24 @@ export default class HangmanMain extends Component {
 
   isWinner = () => {
     const winLetters = this.state.puzzleWord
-      .replace(/\s/g, "")
-      .split("")
+      .replace(/\s/g, '')
+      .split('')
       .filter((value, index, self) => {
         return self.indexOf(value) === index;
       });
-    // console.log(winLetters);
+
     return winLetters.sort().toString() ===
       this.state.winGuesses.sort().toString()
       ? this.setState({
           winner: true
         })
       : null;
-    // const distinctLetters = [...new Set(winLetters)];
-    // if (distinctLetters.sort() === this.state.winGuesses.sort()) {
-    //   this.setState({
-    //     winner: true
-    //   });
-    // }
   };
 
   render() {
     return (
-      <div className="hang-container">
-        <h1>NERD HANGMAN!</h1>
+      <div className='hang-container'>
+        <h1 className='large'>NERD HANGMAN!</h1>
         {this.state.winner ? <h1>You WIN!</h1> : null}
         {this.state.wrongGuesses.length === 6 ? (
           <>
@@ -93,9 +87,11 @@ export default class HangmanMain extends Component {
         )}
 
         <h3>
-          on the count of 6 the thing melts... {this.state.wrongGuesses.length}
+          On the count of 6 the thing melts... {this.state.wrongGuesses.length}
         </h3>
-        <button onClick={() => this.newGame()}>New Game?</button>
+        <div className='btn' onClick={() => this.newGame()}>
+          New Game?
+        </div>
       </div>
     );
   }
