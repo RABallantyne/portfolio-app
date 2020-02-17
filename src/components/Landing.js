@@ -26,7 +26,7 @@ const Landing = () => {
               <span>Contact</span>
             </Link>
             <a href={RABallantyneResume} className='btn btn-light'>
-              Download Resume
+              Resume
             </a>
           </div>
         </div>

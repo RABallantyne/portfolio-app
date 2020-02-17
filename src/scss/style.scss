@@ -11,7 +11,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   color: #333;
 }
 
@@ -58,7 +58,7 @@ img {
 
 .landing {
   position: relative;
-  background: blue;
+  background: url('../img/sunset2.png') no-repeat center center/cover fixed;
   height: 100vh;
 
   &-inner {
@@ -94,10 +94,16 @@ img {
   }
 }
 .icons {
+  display: flex;
+  align-items: center;
   padding-bottom: 0.7em;
-  a {
-    padding: 0 0.7em 0.5em 0;
+  justify-content: left;
+  .link {
+    padding: 0.1em 1em 0 0;
     margin-left: 0;
+  }
+  .btn {
+    padding: 0.2em 0.5em;
   }
 }
 
@@ -191,4 +197,33 @@ img {
       padding-left: 1em;
     }
   }
+}
+
+.info-section {
+  align-self: flex-start;
+  width: 100%;
+  margin: auto;
+  padding: 5px;
+}
+
+.info-header {
+  margin: 4px;
+}
+
+.info-header p {
+  font-style: italic;
+}
+
+.info-header span {
+  margin: 4px;
+  visibility: visible;
+}
+
+.info-title {
+  font-size: larger;
+  font-style: italic;
+}
+.info-points {
+  margin: 5px;
+  padding: 0px 5px 0px 5px;
 }
