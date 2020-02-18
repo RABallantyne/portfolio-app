@@ -25,7 +25,7 @@ export default function Contact() {
     document.querySelector('.contact-form').reset();
   };
   return (
-    <>
+    <div className='container'>
       <h1 className='large text-primary'>Contact me</h1>
       <div className='icons'>
         <a
@@ -68,6 +68,6 @@ export default function Contact() {
         <textarea name='message' />
         <input className='btn btn-light' type='submit' value='Send' />
       </form>
-    </>
+    </div>
   );
 }

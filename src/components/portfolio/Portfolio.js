@@ -50,7 +50,7 @@ export default function Portfolio(props) {
       <div className='projects-container'>
         {showMenu ? (
           <>
-            <h1 className='large'>
+            <h1 className='large text-primary'>
               Welcome to my Portfolio, please select a project to learn more.
             </h1>
             <div className='project-card'>
