@@ -170,15 +170,17 @@ img {
     padding: 6rem 0;
     height: 120vh;
     &-inner {
-      margin-top: 1rem;
+      h1 {
+        padding-top: 1em;
+      }
     }
     .btn {
       margin: 0.5rem;
     }
   }
-  .container {
-    margin-top: 4rem;
-  }
+  // .container {
+  //   margin-top: 4rem;
+  // }
   .projects-container {
     padding-top: 3em;
   }
