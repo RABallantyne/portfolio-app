@@ -107,13 +107,16 @@ img {
       }
     }
     #menu {
+      a {
+        font-size: 1.3em;
+      }
       position: absolute;
       display: flex;
       flex-direction: column;
-      margin: -50px 2em 2em -55px;
+      margin: -60px 2em 2em -65px;
       z-index: 0.8;
 
-      padding-top: 70px;
+      padding-top: 90px;
 
       // background: $primary-color;
       list-style-type: none;
