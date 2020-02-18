@@ -4,7 +4,7 @@ export default function ScoreKeeper() {
   return (
     <div className='info-section'>
       <div className='info-header'>
-        <span className='info-title'>ScoreKeeper</span> <span>React |</span>
+        <span className='info-title'>ScoreKeeper</span> <span>React</span>|
         <span>
           <a
             href='https://github.com/RABallantyne/score-keeper'

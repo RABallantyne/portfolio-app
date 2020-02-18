@@ -4,8 +4,8 @@ export default function BarBack() {
   return (
     <div className='info-section'>
       <div className='info-header'>
-        <span className='info-title'>BarBack</span>{' '}
-        <span>React | NodeJS |</span>
+        <span className='info-title'>BarBack</span> <span>React</span>|
+        <span>NodeJS</span>|
         <span>
           <a
             href='https://github.com/RABallantyne/barback-frontend'

@@ -238,6 +238,38 @@ img {
       margin-bottom: 0.5em;
     }
   }
+  .info-section {
+    align-self: flex-start;
+    width: 100%;
+    margin: auto;
+    padding: 0.5em 0;
+
+    .info-header {
+      margin: 0 0.5em 0 0;
+    }
+
+    .info-header p {
+      font-style: italic;
+      font-size: 1.2em;
+    }
+
+    .info-header span {
+      margin: 0.5em 0.5em;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .info-title {
+      margin-left: 0;
+      font-size: 2em;
+      font-style: italic;
+    }
+    .info-points {
+      margin: 0.4em 0;
+      // padding: 0.5em 0;
+    }
+  }
 }
 
 .life-container {
@@ -254,7 +286,11 @@ img {
   .buttons {
     align-self: center;
     padding-bottom: 1em;
+    .btn {
+      margin: 0.3em 0.3em;
+    }
   }
+
   .life-game {
     align-self: center;
     display: grid;
@@ -314,35 +350,6 @@ img {
 }
 
 //portfolio repeats:
-
-.info-section {
-  align-self: flex-start;
-  width: 100%;
-  margin: auto;
-  padding: 5px;
-
-  .info-header {
-    margin: 4px;
-  }
-
-  .info-header p {
-    font-style: italic;
-  }
-
-  .info-header span {
-    margin: 4px;
-    visibility: visible;
-  }
-
-  .info-title {
-    font-size: larger;
-    font-style: italic;
-  }
-  .info-points {
-    margin: 5px;
-    padding: 0px 5px 0px 5px;
-  }
-}
 
 //Hangman style
 .hang-container {

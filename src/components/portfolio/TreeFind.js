@@ -4,7 +4,7 @@ export default function TreeFind() {
   return (
     <div className='info-section'>
       <div className='info-header'>
-        <span className='info-title'>TreeFind</span> <span>Ruby </span>
+        <span className='info-title'>TreeFind</span> <span>Ruby</span>|
         <span>
           <a
             href='https://github.com/lukemenard/TreeFind'

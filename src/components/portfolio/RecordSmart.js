@@ -4,8 +4,8 @@ export default function RecordSmart() {
   return (
     <div className='info-section'>
       <div className='info-header'>
-        <span className='info-title'>Record Smart</span>{' '}
-        <span>JavaScript | Ruby on Rails</span>
+        <span className='info-title'>RecordSmart</span> <span>JavaScript</span>|
+        <span>Ruby on Rails</span>|
         <span>
           <a
             href='https://github.com/RABallantyne/record-smart-frontend'
@@ -15,6 +15,7 @@ export default function RecordSmart() {
             Github
           </a>
         </span>
+        |
         <span>
           <a
             href='https://github.com/RABallantyne/record-smart-backend'
