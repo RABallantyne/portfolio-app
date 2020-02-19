@@ -422,3 +422,74 @@ img {
     /* justify-content: center; */
   }
 }
+
+//about me
+
+.about {
+  display: flex;
+  flex-direction: column;
+  &-section {
+    display: flex;
+    align-items: center;
+    margin: 0.8em 0;
+    p {
+      text-align: center;
+    }
+  }
+  &-right {
+    flex: 0 0 50%;
+    margin: 0.5em 0 0.5em 0.5em;
+    font-size: 1.3em;
+  }
+  &-left {
+    flex: 0 0 50%;
+    margin: 0.5em 0;
+    font-size: 1.3em;
+  }
+  .image {
+    flex: 0 0 50%;
+
+    &-right {
+      margin-left: 0.5em;
+      align-self: flex-end;
+    }
+    &-left {
+      margin-right: 0.5em;
+    }
+    &-center {
+      width: 60%;
+      margin: auto;
+      justify-self: center;
+    }
+  }
+  .image-fit {
+    object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: $mobile-width) {
+  .about {
+    &-section {
+      display: flex;
+      flex-direction: column;
+    }
+    &-right {
+      margin-left: 0;
+    }
+    &-left {
+      margin-right: 0;
+    }
+    .image {
+      width: 100%;
+      &-right {
+        margin-left: 0;
+      }
+      &-left {
+        margin-right: 0;
+      }
+      &-center {
+        width: 100%;
+      }
+    }
+  }
+}
