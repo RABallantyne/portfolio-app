@@ -23,7 +23,7 @@ export default function About() {
           </div>
           <div className='about-right'>
             I was born in Texas, but have spent most of my life in Colorado. I
-            attended the University of Colorado at Boulder, earning a Bachelors
+            attended the University of Colorado at Boulder, earning a Bachelor's
             Degree in Business Management with an emphasis in Entrepreneurial
             Studies. Throughout college I found as much time as I could to
             climb, snowboard, cycle, and play music outside of managing a local
@@ -36,13 +36,13 @@ export default function About() {
         </div>
         <div className='about-section'>
           <div className='about-left'>
-            I began bartending as a way to pay the bills while off from tour but
-            once touring slowed down I gravitated towards management. I took a
-            lot of pleasure in understanding and refining chaotic systems, and
-            transisitioned into upper management very quickly. It was during
-            this time that I developed a passion for systems and process. I
-            created a variety of systematic reports and spreadsheets to this end
-            and became interested in coding to find ways to make my systems more
+            I began bartending as a way to pay the bills while off from tour,
+            but once touring slowed down I gravitated towards management. I took
+            a lot of pleasure in understanding and refining chaotic systems, and
+            transitioned into upper management very quickly. It was during this
+            time that I developed a passion for systems and process. I created a
+            variety of systematic reports and spreadsheets to this end and
+            became interested in coding to find ways to make my systems more
             user friendly.
           </div>
           <div className='image-right'>
@@ -64,14 +64,14 @@ export default function About() {
             <p>Me and my awesome wife, Laina.</p>
           </div>
           <div className='about-right'>
-            After spending some time learning the basics, I decided to attend
-            the Flatiron School Denver in the summer and fall of 2019. It was an
-            intense program, but it was worth every stressful moment. It opened
-            my eyes to the awesome world of prorgramming, and I will never look
-            back. I have developed a passion for solving problems and love the
-            satisfaction that comes with discovering solutions. I have spent my
-            time since graduation refining my skills, working on various
-            projects, and enjoying life with my family in Denver.
+            After spending some time learning the basics of coding, I decided to
+            attend the Flatiron School Denver in the summer and fall of 2019. It
+            was an intense program, but it was worth every stressful moment. It
+            opened my eyes to the awesome world of prorgramming, and I will
+            never look back. I have developed a passion for solving problems and
+            love the satisfaction that comes with discovering solutions. I have
+            spent my time since graduation refining my skills, working on
+            various projects, and enjoying life with my family in Denver.
           </div>
         </div>
         <div className='about-section'>
