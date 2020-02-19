@@ -28,13 +28,17 @@ export default function ScoreKeeper() {
       </div>
       <div className='info-points'>
         <p>
-          + Designed and styled for a simply user experience using custom Css.
+          + Implemented a minimalistic UI Design for an easy user experience
+          using custom CSS.
         </p>
         <p>
-          + Dynamically coded to allow for unlimited teams and rounds, which can
-          be added at any time.
+          + Programmed dynamically to allow for unlimited teams and rounds,
+          which can be added at any time.
         </p>
-        <p>+ Developed as a client side SPA that can be used offline.</p>
+        <p>
+          + Deployed as a client side SPA that utilizes local storage and can be
+          used offline.
+        </p>
       </div>
     </div>
   );

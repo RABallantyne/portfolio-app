@@ -30,10 +30,10 @@ export default function RecordSmart() {
       <div className='info-points'>
         <p>+ Designed and styled site using custom CSS.</p>
         <p>
-          + Optimized user experience with full CRUD for parts, songs, and
-          recording projects.
+          + Implemented full CRUD for numerous api endpoints using only vanilla
+          JavaScript.
         </p>
-        <p>+ Utilized JWT tokens for a secure login.</p>
+        <p>+ Utilized JWT tokens for a secure login. </p>
       </div>
     </div>
   );

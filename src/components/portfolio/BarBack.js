@@ -42,24 +42,24 @@ export default function BarBack() {
       </div>
       <div className='info-points'>
         <p>
-          + Utilized Auth 0 for a highly secure login with the option of using
-          Google.{' '}
-        </p>
-        <p>
           + Designed and styled an intuitive user experience with clear and
           obvious navigation using Bootstrap 4 and custom CSS.
         </p>
         <p>
-          + Utilized years of bar management experience to allow users to
-          customize and clearly understand costs.
+          + Utilized Node and PostgreSQL with knex and objection to create a
+          lightweight API.
         </p>
         <p>
-          + Learned and utilized Node in a matter of days to create a
-          lightweight API.
+          + Utilized Auth 0 for a highly secure login with the option of using
+          Google.
         </p>
         <p>
           + Implemented asynchronous CRUD actions for bars, menus, drinks, and
           ingredients.
+        </p>
+        <p>
+          + Utilized years of bar management experience to allow users to
+          customize and clearly understand costs.
         </p>
       </div>
     </div>
